@@ -1,4 +1,9 @@
-from Queue import Queue
+# -*- coding: utf-8 -*-
+import sys
+if sys.version_info[0] == 2:
+    from Queue import Queue
+else:
+    from queue import Queue  # in py3 the module was renamed
 from threading import Lock
 import time
 
